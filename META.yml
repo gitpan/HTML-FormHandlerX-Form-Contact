@@ -22,4 +22,4 @@ requires:
   HTML::FormHandler::Moose: 0
   Test::Exception: 0
   Test::More: 0
-version: 0.03
+version: 0.04

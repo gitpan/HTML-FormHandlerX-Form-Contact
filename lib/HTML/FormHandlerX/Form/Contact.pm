@@ -11,11 +11,11 @@ HTML::FormHandlerX::Form::Contact - An HTML::FormHandler contact form.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 $VERSION = eval $VERSION;
 
@@ -106,7 +106,7 @@ sub validate_telephone
 {
     my ( $self, $field ) = @_;
     
-    if ( $self->value !~ /\d/ )
+    if ( $field->value !~ /\d/ )
     {
         $field->add_error( "Your telephone number doesn't contain any digits." );
     }
