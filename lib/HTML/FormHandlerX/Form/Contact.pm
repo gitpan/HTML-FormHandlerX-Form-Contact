@@ -11,11 +11,11 @@ HTML::FormHandlerX::Form::Contact - An HTML::FormHandler contact form.
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 $VERSION = eval $VERSION;
 
@@ -27,7 +27,7 @@ From a usability perspective in form design, it is advised to only ask for the m
 
  use HTML::FormHandlerX::Form::Contact;
 
- my $form = HTML::FormHandlerX::Form::Contact->new( activate => [ qw( name email subject message ) ] );
+ my $form = HTML::FormHandlerX::Form::Contact->new( active => [ qw( name email subject message ) ] );
 
  $form->process( params => { name    => $name,
                              email   => $email,
